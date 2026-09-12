@@ -1,0 +1,246 @@
+@import "tailwindcss";
+
+:root {
+  --hydro-midnight: #062540;
+  --hydro-deep-blue: #154466;
+  --hydro-ocean: #216083;
+  --hydro-amber: #f0a315;
+  --hydro-orange: #da6d09;
+  --hydro-ivory: #fef6e7;
+  --hydro-muted: rgb(254 246 231 / 0.64);
+  --hydro-faint: rgb(254 246 231 / 0.42);
+  --hydro-border: rgb(33 96 131 / 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: var(--hydro-midnight);
+  color: var(--hydro-ivory);
+}
+
+/* HydroSentry palette overrides for the existing Tailwind utility vocabulary. */
+[class~="bg-[#080d12]"],
+[class~="bg-[#0a0f14]"] {
+  background-color: var(--hydro-midnight) !important;
+}
+
+[class~="bg-[#0b1118]"],
+[class~="bg-slate-950"],
+[class~="bg-slate-950/90"] {
+  background-color: var(--hydro-midnight) !important;
+}
+
+[class~="bg-slate-900/60"],
+[class~="bg-slate-900/50"],
+[class~="bg-white/[0.025]"],
+[class~="bg-white/[0.03]"],
+[class~="bg-white/[0.04]"],
+[class~="bg-black/20"],
+[class~="bg-black/10"] {
+  background-color: rgb(21 68 102 / 0.72) !important;
+}
+
+[class~="bg-white/5"],
+[class~="bg-white/[0.02]"] {
+  background-color: rgb(33 96 131 / 0.28) !important;
+}
+
+[class~="text-white"],
+[class~="text-slate-100"],
+[class~="text-slate-200"] {
+  color: var(--hydro-ivory) !important;
+}
+
+[class~="text-slate-300"] {
+  color: rgb(254 246 231 / 0.82) !important;
+}
+
+[class~="text-slate-400"],
+[class~="text-slate-500"] {
+  color: var(--hydro-muted) !important;
+}
+
+[class~="text-slate-600"],
+[class~="text-slate-700"] {
+  color: var(--hydro-faint) !important;
+}
+
+[class~="border-white/10"],
+[class~="border-white/5"] {
+  border-color: var(--hydro-border) !important;
+}
+
+[class~="border-white/15"] {
+  border-color: rgb(254 246 231 / 0.18) !important;
+}
+
+[class~="border-cyan-400/20"],
+[class~="border-cyan-400/30"],
+[class~="border-cyan-400/40"] {
+  border-color: rgb(240 163 21 / 0.42) !important;
+}
+
+[class~="bg-cyan-400/10"],
+[class~="bg-cyan-400/[0.06]"],
+[class~="bg-cyan-400/[0.04]"],
+[class~="bg-cyan-400/5"] {
+  background-color: rgb(240 163 21 / 0.12) !important;
+}
+
+[class~="text-cyan-400"],
+[class~="text-cyan-300"] {
+  color: var(--hydro-amber) !important;
+}
+
+[class*="text-cyan-"] {
+  color: var(--hydro-amber) !important;
+}
+
+[class*="border-cyan-"] {
+  border-color: rgb(240 163 21 / 0.42) !important;
+}
+
+[class*="bg-cyan-"] {
+  background-color: rgb(240 163 21 / 0.12) !important;
+}
+
+[class~="bg-emerald-400/10"],
+[class~="bg-emerald-400/5"] {
+  background-color: rgb(33 96 131 / 0.22) !important;
+}
+
+[class~="text-emerald-400"],
+[class~="text-emerald-300"] {
+  color: var(--hydro-ocean) !important;
+}
+
+[class*="text-emerald-"] {
+  color: var(--hydro-ocean) !important;
+}
+
+[class*="border-emerald-"] {
+  border-color: rgb(33 96 131 / 0.48) !important;
+}
+
+[class*="bg-emerald-"] {
+  background-color: rgb(33 96 131 / 0.22) !important;
+}
+
+[class~="border-emerald-400/20"] {
+  border-color: rgb(33 96 131 / 0.48) !important;
+}
+
+[class~="bg-amber-400/10"],
+[class~="bg-amber-400/5"] {
+  background-color: rgb(240 163 21 / 0.14) !important;
+}
+
+[class~="text-amber-400"],
+[class~="text-amber-300"] {
+  color: var(--hydro-amber) !important;
+}
+
+[class*="text-amber-"] {
+  color: var(--hydro-amber) !important;
+}
+
+[class*="border-amber-"] {
+  border-color: rgb(240 163 21 / 0.42) !important;
+}
+
+[class*="bg-amber-"] {
+  background-color: rgb(240 163 21 / 0.14) !important;
+}
+
+[class~="border-amber-400/20"],
+[class~="border-amber-400/15"] {
+  border-color: rgb(240 163 21 / 0.42) !important;
+}
+
+[class~="bg-orange-400"],
+[class~="bg-orange-400/10"],
+[class~="bg-orange-400/[0.03]"],
+[class~="bg-orange-400/5"] {
+  background-color: rgb(218 109 9 / 0.18) !important;
+}
+
+[class~="text-orange-400"],
+[class~="text-orange-300"] {
+  color: var(--hydro-orange) !important;
+}
+
+[class*="text-orange-"] {
+  color: var(--hydro-orange) !important;
+}
+
+[class*="border-orange-"] {
+  border-color: rgb(218 109 9 / 0.52) !important;
+}
+
+[class*="bg-orange-"] {
+  background-color: rgb(218 109 9 / 0.18) !important;
+}
+
+[class~="border-orange-400/20"] {
+  border-color: rgb(218 109 9 / 0.52) !important;
+}
+
+[class~="bg-red-400"],
+[class~="bg-red-400/10"],
+[class~="bg-red-400/5"] {
+  background-color: rgb(218 109 9 / 0.22) !important;
+}
+
+[class~="text-red-400"],
+[class~="text-red-300"] {
+  color: var(--hydro-orange) !important;
+}
+
+[class*="text-red-"] {
+  color: var(--hydro-orange) !important;
+}
+
+[class*="border-red-"] {
+  border-color: rgb(218 109 9 / 0.65) !important;
+}
+
+[class*="bg-red-"] {
+  background-color: rgb(218 109 9 / 0.22) !important;
+}
+
+[class~="border-red-400/20"] {
+  border-color: rgb(218 109 9 / 0.65) !important;
+}
+
+[class~="hover:bg-white/[0.04]"]:hover,
+[class~="hover:bg-white/[0.05]"]:hover,
+[class~="hover:bg-white/[0.06]"]:hover {
+  background-color: rgb(33 96 131 / 0.42) !important;
+}
+
+[class~="hover:bg-slate-900/80"]:hover {
+  background-color: var(--hydro-deep-blue) !important;
+}
+
+[class~="shadow-xl"] {
+  --tw-shadow-color: rgb(6 37 64 / 0.55);
+}
