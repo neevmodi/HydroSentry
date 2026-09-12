@@ -198,8 +198,6 @@ function Monitoring() {
 
   const {
     predictions: mlPredictions,
-    loading: mlLoading,
-    errors: mlErrors,
   } = useSensorPredictions(liveSensors)
 
   const onlineCount = liveSensors.filter(

@@ -3,7 +3,6 @@ import {
   Bell,
   ChartNoAxesCombined,
   LayoutDashboard,
-  Map,
   Radio,
   ShieldAlert,
   Waves,
@@ -46,9 +45,9 @@ const navigation = [
 
 function DashboardLayout({ children }) {
   return (
-    <div className="min-h-screen bg-[#062540] text-[#FEF6E7]">
+    <div className="min-h-screen bg-[#0A3323] text-[#F7F4D5]">
       {/* Sidebar */}
-      <aside className="fixed left-0 top-0 z-40 hidden h-screen w-64 border-r border-white/10 bg-[#062540] lg:block">
+      <aside className="fixed left-0 top-0 z-40 hidden h-screen w-64 border-r border-white/10 bg-[#0A3323] lg:block">
         {/* Logo */}
         <div className="flex h-20 items-center border-b border-white/10 px-6">
           <div className="flex items-center gap-3">
@@ -113,7 +112,7 @@ function DashboardLayout({ children }) {
       {/* Main */}
       <main className="min-h-screen lg:ml-64">
         {/* Header */}
-        <header className="sticky top-0 z-30 flex h-20 items-center justify-between border-b border-white/10 bg-[#062540]/90 px-5 backdrop-blur-xl sm:px-8">
+        <header className="sticky top-0 z-30 flex h-20 items-center justify-between border-b border-white/10 bg-[#0A3323]/90 px-5 backdrop-blur-xl sm:px-8">
           <div>
             <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
               Regional Operations

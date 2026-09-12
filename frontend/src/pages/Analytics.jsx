@@ -23,49 +23,49 @@ const metricConfig = {
   rainfall: {
     label: 'Rainfall',
     unit: 'mm',
-    color: '#F0A315',
+    color: '#105666',
     icon: CloudRain,
     getValue: (sensor) => sensor.rainfall,
   },
   waterLevel: {
     label: 'Water Level',
     unit: 'm',
-    color: '#216083',
+    color: '#839958',
     icon: Droplets,
     getValue: (sensor) => sensor.waterLevel,
   },
   flowRate: {
     label: 'Flow Rate',
     unit: 'm³/s',
-    color: '#DA6D09',
+    color: '#D3968C',
     icon: Gauge,
     getValue: (sensor) => sensor.flowRate,
   },
   soilMoisture: {
     label: 'Soil Moisture',
     unit: '%',
-    color: '#216083',
+    color: '#839958',
     icon: Sprout,
     getValue: (sensor) => sensor.soilMoisture,
   },
   temperature: {
     label: 'Temperature',
     unit: '°C',
-    color: '#F0A315',
+    color: '#105666',
     icon: Thermometer,
     getValue: (sensor) => sensor.temperature,
   },
   humidity: {
     label: 'Humidity',
     unit: '%',
-    color: '#216083',
+    color: '#839958',
     icon: Wind,
     getValue: (sensor) => sensor.humidity,
   },
   riskScore: {
     label: 'Risk Score',
     unit: '%',
-    color: '#DA6D09',
+    color: '#D3968C',
     icon: Activity,
     getValue: () => null,
   },
@@ -238,7 +238,7 @@ function InlineLineChart({ samples, valueKey, unit, color, label, emptyMessage }
             cx={point.x}
             cy={point.y}
             r="3.5"
-            fill="#062540"
+            fill="#0A3323"
             stroke={color}
             strokeWidth="2"
           />
@@ -293,9 +293,9 @@ function InlineMlChart({ samples }) {
     padding.left + (index / (samples.length - 1)) * chartWidth
   const scaleY = (value) => padding.top + (1 - value / 100) * chartHeight
   const lines = [
-    { key: 'rfScore', label: 'Random Forest', color: '#F0A315' },
-    { key: 'lstmScore', label: 'LSTM', color: '#216083' },
-    { key: 'fusionScore', label: 'Fusion', color: '#DA6D09' },
+    { key: 'rfScore', label: 'Random Forest', color: '#105666' },
+    { key: 'lstmScore', label: 'LSTM', color: '#839958' },
+    { key: 'fusionScore', label: 'Fusion', color: '#D3968C' },
   ]
 
   return (
@@ -801,9 +801,9 @@ function Analytics() {
 
         <div className="mt-5 grid gap-3 sm:grid-cols-3">
           {[
-            ['Random Forest', 'rfScore', '#F0A315'],
-            ['LSTM', 'lstmScore', '#216083'],
-            ['Fusion', 'fusionScore', '#DA6D09'],
+            ['Random Forest', 'rfScore', '#105666'],
+            ['LSTM', 'lstmScore', '#839958'],
+            ['Fusion', 'fusionScore', '#D3968C'],
           ].map(([label, key, color]) => {
             const latest = selectedPredictionSamples[selectedPredictionSamples.length - 1]?.[key]
 
